@@ -1,5 +1,5 @@
-import { NavLink } from 'react-router-dom'
 import logo from '@/assets/logo_white.png'
+import CustomNavLink from './CustomNavLink'
 
 function Navbar() {
     return (
@@ -8,25 +8,11 @@ function Navbar() {
                 <img src={logo} alt="logo" />
             </div>
 
-            <NavLink
-                to={'/fuer-Fachkraefte'}
-                className="text-white text-lg font-light"
-            >
-                Für Fachkräfte
-            </NavLink>
-            <NavLink
-                to={'/fuer-Arbeitgeber'}
-                className="text-white text-lg font-light"
-            >
-                Für Arbeitgeber
-            </NavLink>
-            <NavLink
-                to={'/ueber-uns'}
-                className="text-white text-lg font-light"
-            >
-                Über uns
-            </NavLink>
-            <button className="text-black bg-white rounded-full px-12 py-2.5 text-lg font-medium">
+            <CustomNavLink route="'/fuer-Fachkraefte'" name="Für Fachkräfte" />
+            <CustomNavLink route="'/fuer-Arbeitgeber'" name="Für Arbeitgeber" />
+            <CustomNavLink route="'/ueber-uns'" name=" Über uns" />
+
+            <button className="rounded-full bg-white px-12 py-2.5 text-lg font-medium text-black">
                 Kontakt
             </button>
         </div>

@@ -6,6 +6,7 @@ export default {
         colors: {
             white: '#fff',
             black: '#000',
+            yellow: '#F7BB63',
         },
         fontFamily: {
             sans: ['"Manrope"', ...defaultTheme.fontFamily.sans],
