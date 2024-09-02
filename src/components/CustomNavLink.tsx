@@ -6,8 +6,8 @@ function CustomNavLink(props: { route: string; name: string }) {
             to={props.route}
             className={({ isActive }) =>
                 isActive
-                    ? "before:bg-yellow text-lg font-light text-white before:mr-4 before:inline-block before:h-2.5 before:w-2.5 before:rounded-full before:content-['']"
-                    : 'text-lg font-light text-white'
+                    ? `before:bg-yellow text-lg font-light text-white before:mr-4 before:inline-block before:h-2.5 before:w-2.5 before:rounded-full before:content-['']`
+                    : `text-lg font-light text-white`
             }
         >
             {props.name}
